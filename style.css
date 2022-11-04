@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+ 
+:root {
+    /* pallete 1 */
+    --baby-pink: #F8C5C6;
+    --blue-bell: #AB9AD1;
+    --blue-purple: #A3A4E5;
+    --purple-1:#c79dd7;
+   --purple-2: #673888;
+   --purple-3:#4d1b7b;
+   --pink:#ef4f91;
+   --dark-blue:#363b74;
+   /* pallete 2 */
+    --dark-slate-gray: #3E4E50;
+    --apricot: #FACFAD;
+    --mellow-apricot: #F8BD7F;
+    --sandy-brown: #F5AC72;
+    --tumble-weed: #F2AA7E;
+   /* pallete 3 */
+    --shadow: #93855F;
+    --cafe-noir: #513C27;
+    --ebony: #565C49;
+    --golden-brown: #9F6F32;
+    --dark-slate-gray: #2A403B;
+
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Nav bar */
+.logo {
+    padding-left: 10px;
+}
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 9vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a{
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger {
+    display: none;
+}
+.burger div{
+    width:25px;
+    height:3px;
+    border-radius: 1.5px;
+    background-color:black;
+    margin:5px;
+    transition: all ease 0.45s ;
+}
+
+/* hero section */
+
+.intro-container {
+    line-height: 1.0;
+  }
+.intro{
+  font-size: 3.5rem;
+  line-height: 1.10;
+  font-style: italic;
+}
+span.name {
+  font-size: 4.2rem;
+  font-family: 'Rouge Script', cursive;
+}
+.hr {
+  background-color: white;
+  border: none;
+  content: "";
+  height: 1.75px;
+  margin-bottom: 1.0rem;
+  margin-top: 0.3rem;
+  transform-origin: center left;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+/* hero css */
+#hero-container {
+  display: flex;
+  align-items: center;  
+  background-image: linear-gradient(to bottom right,
+  #190cacc0,
+  #d154e4af),url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  min-width: 300px; 
+}
+.occupation {
+  padding: 1.2rem 0px ;
+  font-size: 1.75rem;
+}
+.content {
+  display: flex;
+  min-height: 100vh;
+  color: white;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+  margin: 0 auto;
+}
+.side {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+.hr {
+    max-width: 640px;
+  }
+  #hero-container{
+    transition-duration: 3000ms;
+    height:auto;
+  }
+  .content {
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem;
+  }
+  .side {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 20rem;
+  margin-left: 4rem;
+  /* so that it appears after the written content although
+  its written first in index.html*/
+  order: 2;
+  width: 20rem;
+  }
+  .about-text{
+  flex-grow: 1;
+  flex-shrink: 1;
+  }
+.picture-shadow,
+.picture-image {
+display: block;
+height: 100%;
+left: 0;
+top: 0;
+width: 100%;
+}
+.name {
+  font-size: 2.25rem;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+  }
+
+.picture {
+  /* technique that makes the .picture as high as it is wide making it square
+at all times. */
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+  }
+.picture-shadow {
+  border-radius: 290763px;
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  position: absolute;
+  top: 10%;
+}
+.picture-image {
+  border-radius: 290763px;
+  position: absolute;
+}
+@media screen and (max-width:575px) {
+body {
+    overflow-x: hidden;
+}
+.nav-links {
+    position: absolute;
+    right: 0px;
+    height:85vh;
+    top: 9vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:50%;
+    transform: translateX(100%);
+    transition: transform 0.45s ease-in;
+}
+.nav-links li {
+    opacity: 0;
+}
+.nav-links a {
+    padding: 5px;
+}
+.burger {
+    display: block;
+}
+
+/* hero section */
+
+.hr {
+    min-width: 350px;
+    max-width: 544px;
+    transition-duration: 300ms;
+  }
+  #hero-container{
+    height:170vh;
+    background-position: 0%;
+    transition-duration: 4500ms;
+  }
+  .content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5rem 3rem; */
+  /* height: max-content; */
+  }
+  .side {
+  /* margin-bottom: 3rem; */
+  width: 100%;
+  margin: 0%;
+  padding-top: 60px;
+  }
+
+}
+.nav-active {
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* hero section */
