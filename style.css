@@ -161,7 +161,7 @@ span.name {
   flex-grow: 1;
   flex-shrink: 1;
   }
-.picture-shadow,
+/* .picture-shadow, */
 .picture-image {
 display: block;
 height: 100%;
@@ -180,16 +180,17 @@ width: 100%;
 at all times. */
   padding-top: 100%;
   position: relative;
+  height:max-content;
   width: 100%;
   }
-.picture-shadow {
+/* .picture-shadow {
   border-radius: 290763px;
   background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
   position: absolute;
   top: 10%;
-}
+} */
 .picture-image {
-  border-radius: 290763px;
+  /* border-radius: 290763px; */
   position: absolute;
 }
 @media screen and (max-width:700px) {
