@@ -9,6 +9,27 @@
     <script src="https://kit.fontawesome.com/8b5aa90e1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <aside class="theme-container">
+        <form action="" class="theme-picker">
+            <fieldset>
+                <legend class="visually-hidden">
+                    Pick a color scheme
+                </legend>
+                <label class="visually-hidden" for="first">1</label>
+                <input type="radio" 
+                name="theme" id="first">
+                <label class="visually-hidden" for="second">2</label>
+                <input type="radio" 
+                name="theme" id="second" checked>
+                <label class="visually-hidden" for="third">3</label>
+                <input type="radio" 
+                name="theme" id="third">
+                <label class="visually-hidden" for="fourth">4</label>
+                <input type="radio" 
+                name="theme" id="fourth">
+            </fieldset>
+        </form>
+    </aside>
     <div class="pic-background">
         <header class="glassmorphism">
             <nav class="navbar">
@@ -61,16 +82,81 @@
     </div>
 
     <main>
-        <section class="about">
+        <section class="about-container">
             <div class="about-title">
-                <h2 class="about-me-heading">About me</h2>
+                <h2 class="about-me heading">About me</h2>
             </div>
             <div class="about-text">
                 I am a goal-oriented Computer Science sophomore student and web developer from Lucknow, India who loves spending time absorbing knowledge and solving problems using it. Coding is my passion as it helps solve practical problems. I am always open to working on something new and challenging.
             </div>
         </section>
-    </main>
+        <section class="project-display-container">
+            <div class="project-section-title">
+                <h2 class="project-heading heading">Projects</h2>
+            </div>
+            <div class="projects-container">
+                
+                <input type="radio" name="buttons" id="r1" checked>    
+                <input type="radio" name="buttons" id="r2">    
+                <input type="radio" name="buttons" id="r3">    
+                <input type="radio" name="buttons" id="r4">   
 
+                <div class="controls">
+                    <label for="r1"></label>
+                    <label for="r2"></label>
+                    <label for="r3"></label>
+                    <label for="r4"></label>
+                </div>
+    
+                <div class="outer-image-container">
+                    <div class="inner-image-container">
+                        <div class="box top">
+                            <img src="images/img1.jpg" alt="">
+                            <h3 class="project-title">Doctor Who API</h3>
+                        </div>
+                        <div class="box back">
+                            <img src="images/img2.jpg" alt="">
+                            <h3 class="project-title">Portfolio Website</h3>
+                        </div>
+                        <div class="box bottom">
+                            <img src="images/img3.jpg" alt="">
+                            <h3 class="project-title">Club event planning website</h3>
+                        </div>
+                        <div class="box front">
+                            <img src="images/background3.jpeg" alt="">
+                            <h3 class="project-title">Note Taking app</h3>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <div class="box front">
+                            <div class="content">
+                                <h3 class="Project-details-heading">Note Taking app</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia voluptates saepe tempora ab sit, vitae ad iusto assumenda tempore quis consectetur? Voluptas ullam reiciendis excepturi expedita, minus veritatis quia.</p>
+                            </div>
+                        </div>
+                        <div class="box bottom">
+                            <div class="content">
+                                <h3 class="Project-details-heading">Doctor Who API</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia voluptates saepe tempora ab sit, vitae ad iusto assumenda tempore quis consectetur? Voluptas ullam reiciendis excepturi expedita, minus veritatis quia.</p>
+                            </div>
+                        </div>
+                        <div class="box back">
+                            <div class="content">
+                                <h3 class="Project-details-heading">Portfolio website</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia voluptates saepe tempora ab sit, vitae ad iusto assumenda tempore quis consectetur? Voluptas ullam reiciendis excepturi expedita, minus veritatis quia.</p>
+                            </div>            
+                        </div>
+                        <div class="box top">
+                            <div class="content">
+                                <h3 class="Project-details-heading">Club event planning website</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia voluptates saepe tempora ab sit, vitae ad iusto assumenda tempore quis consectetur? Voluptas ullam reiciendis excepturi expedita, minus veritatis quia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
 
     </footer>

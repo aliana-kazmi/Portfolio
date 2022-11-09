@@ -1,3 +1,20 @@
+const colorThemes = document.querySelectorAll('[ name="theme"]');
+const storeTheme = function (theme) {
+    localStorage.setItem("theme",theme);
+};
+colorThemes.forEach(themeOption => {
+    themeOption.addEventListener('click',() => {
+        storeTheme(themeOption.id);
+    });
+});
+const setTheme = function(theme) {
+    document.documentElement.className = theme;
+}
+
+const retrieveTheme = function() {
+    const activeTheme = localStorage.getItem("theme", theme);
+}
+
 const navSlide = () => {
     const burger = document.querySelector('.burger')
     const nav = document.querySelector('.nav-links')
