@@ -1,19 +1,20 @@
-const colorThemes = document.querySelectorAll('[ name="theme"]');
+const colorThemes = document.querySelectorAll('[name="theme"]');
+// store theme
 const storeTheme = function (theme) {
-    localStorage.setItem("theme",theme);
+  localStorage.setItem("theme", theme);
 };
-colorThemes.forEach(themeOption => {
-    themeOption.addEventListener('click',() => {
-        storeTheme(themeOption.id);
-    });
-});
-const setTheme = function(theme) {
-    document.documentElement.className = theme;
-}
 
-const retrieveTheme = function() {
-    const activeTheme = localStorage.getItem("theme", theme);
-}
+// set theme when visitor returns
+const setTheme = function () {
+  const activeTheme = localStorage.getItem("theme");
+  colorThemes.forEach((themeOption) => {
+    if (themeOption.id === activeTheme) {
+      themeOption.checked = true;
+    }
+  });
+  // fallback for no :has() support
+  document.documentElement.className = activeTheme;
+};
 
 const navSlide = () => {
     const burger = document.querySelector('.burger')
@@ -56,6 +57,27 @@ const gradientEffect = () => {
         
     });
 }
+
+colorThemes.forEach((themeOption) => {
+  console.log(themeOption)
+  themeOption.addEventListener("click", () => {
+    storeTheme(themeOption.id);
+    // fallback for no :has() support
+    document.documentElement.className = themeOption.id;
+  });
+});
+
+document.onload = setTheme();
+
+var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 90; } else { angle = angle - 90; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+
+// projectImage = document.querySelectorAll(".image-card")
+// function project
 
 navSlide();
 gradientEffect();
