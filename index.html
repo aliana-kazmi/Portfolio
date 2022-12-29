@@ -30,7 +30,6 @@
             </fieldset>
         </form>
     </aside>
-    <div class="pic-background">
         <header class="glassmorphism">
             <nav class="navbar">
                 <div class="logo">
@@ -40,10 +39,10 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Experience</a></li> 
-                    <li><a href="">Contact</a></li>         
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#project-display-section">Projects</a></li>
+                    <li><a href="#timeline-section">Experience</a></li> 
+                    <li><a href="#contact-section">Contact</a></li>         
                 </ul>
                 <div class="burger">
                     <div class="line1"></div>
@@ -51,17 +50,27 @@
                     <div class="line3"></div>
                 </div>
             </nav>
-        </header>
-        <section class="hero-container">
+        </header>    
+    <div class="pic-background">
+        <section class="hero-container" id="hero-container">
             <div class="content">
               <div id="about">
                 <div class="intro-container">
                     <h1 class="intro">Hi <div class="hello">👋</div>, I am <br></h1><span class="name"> Ailya Fatima</span>
-                    <p class="occupation">Web Developer</p>
-                </div>
-                <div class="all-btns">
-                 <div class="btn"><button class="hero-btn">Resume</button></div>
-                <div class="btn"><button class="hero-btn">Contact</button></div>
+                    <div id="sentence-wrapper">
+                      <h2 class="sentence">
+                          <span>I am</span>
+                          <!-- <br /> -->
+                          <div class="words words-1">
+                              <span>Software Engineer</span>                            
+                              <span>Web Developer</span>
+                              <span>Python Enthusiast</span>
+                              <span>Java Lover</span>
+                              <span>Creative</span>
+                              <span>Dedicated</span>
+                          </div>
+                      </h2>
+                  </div>
                 </div>
                 </div>
                 <aside class="side">
@@ -78,17 +87,21 @@
                     </figure>
                   </aside>
             </div>
-          </section>
+          </section>          
     </div>
-
     <main>
-        <section class="about-container">
+        <section class="about-section" id="about-section">
             <div class="about-text">
                 <div class="about-title">
                     <h2 class="about-me heading">About me</h2>
                 </div>
                 I am a goal-oriented Computer Science sophomore student and web developer from Lucknow, India who loves spending time absorbing knowledge and solving problems using it. Coding is my passion as it helps solve practical problems. I am always open to working on something new and challenging.
-            </div>
+                I'm seeking a full-time role where I can exchange wisdom with other developers while contributing to a company and its goals.
+                <div class="all-btns">
+                  <div class="btn"><button class="hero-btn">Resume</button></div>
+                 <div class="btn"><button class="hero-btn">Contact</button></div>
+                 </div>
+              </div>
             <aside class="about-side">
                 <figure class="picture about-pic">
                   <!-- <div class="picture-shadow"></div> -->
@@ -99,16 +112,26 @@
                     images/about-4.png 3x"
                     alt="about photo"
                     width="320"
-                    height="320">
+                    height="320"
+                    >
                 </figure>
               </aside>
         </section>
-        <section class="project-display-container">
-          <div class="custom-shape-divider-top-1670476997">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        <section class="project-display-section" id="project-display-section">
+          <div class="waves-container">
+            <svg class="waves-flipped" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#f8f9fa" />
+            </g>
             </svg>
-        </div>
+            </div> 
             <div class="project-section-title">
                 <h2 class="project-heading heading">Projects</h2>
             </div>
@@ -402,78 +425,130 @@
                       </div>
                   </div>
             </div>
+            <div>
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#f8f9fa" />
+              </g>
+              </svg>
+              </div> 
         </section>
-        <section class="timeline-section">
+        <section class="timeline-section" id="timeline-section">
           <div class="timeline-title">
             <h2 class="time-line heading">My Timeline</h2>
         </div>
-          <div id="timeline-container">
-            <div class="timeline-start">Start</div>
-            <div class="conference-center-line"></div>
-            <div class="conference-timeline-content">
-              <!-- Article -->
-              <div class="timeline-article">
-                <div class="content-left-container">
-                  <div class="content-left">
-                    <h3 class="job-heading">In House Practical Training at AUL</h3>
-                    <p class="article-date">JUL 2022-JUL 2022</p>
-                    <p>
-                      Wrote a research paper on how to develop industry ready
-                      website using Django.
-                      Created an astronomy club website and student management
-                      website for understanding and implementing concepts.
-                      Designed the database schema and website front end
-                      </p>
+        <div class="timeline-container">
+          <div class="timeline__component">
+            <div class="timeline__date timeline__date--right">MAR 2022-JUL 2022</div>
+          </div>
+          <div class="timeline__middle">
+            <div class="timeline__point"></div>
+          </div>
+          <div class="timeline__component timeline__component--bg">
+            <h2 class="timeline__title">In House Practical Training at AUL</h2>
+            <p class="timeline__paragraph">
+              Wrote a research paper on how to develop industry ready
+              website using Django.
+              Created an astronomy club website and student management
+              website for understanding and implementing concepts.
+              Designed the database schema and website front end
+            </p>
+          </div>
+          <div class="timeline__component timeline__component--bg">
+            <h2 class="timeline__title">Summer Researcher at AUL</h2>
+            <p class="timeline__paragraph">
+              To celebrate 5,000 subscribers, I published a video answering some of the most popular questions which
+              my viewers had asked me since starting my YouTube channel.
+            </p>
+            <p class="timeline__paragraph">
+              Wrote a research paper on how mobile apps will impact various other tech fields. Did an insightful research under the guidance of professors of our college.
+            </p>
+          </div>
+          <div class="timeline__middle">
+            <div class="timeline__point"></div>
+          </div>
+          <div class="timeline__component">
+            <div class="timeline__date">MAY 2021-JUN 2021</div>
+          </div>
+          <div class="timeline__component timeline__component--bottom">
+            <div class="timeline__date timeline__date--right">Nov 2020-JUL 2024</div>
+          </div>
+          <div class="timeline__middle">
+            <div class="timeline__point"></div>
+            <div class="timeline__point timeline__point--bottom">end</div>            
+          </div>
+          <div class="timeline__component timeline__component--bottom timeline__component--bg">
+            <h2 class="timeline__title">Persuing a degree in B. Tech in CSE</h2>
+            <p class="timeline__paragraph">
+              Persued a degree in Bachelors in Technology specializing in Computer Science Engineering from Amity University.
+            </p>
+          </div>
+
+        </section>
+        <section class="contact-section" id="contact-section">
+          <div>
+            <svg class="waves-flipped" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#f8f9fa" />
+            </g>
+            </svg>
+            </div> 
+            <div class="contact-box">
+              <div class="contact-links">
+                <h1 class="section-heading heading">CONTACT</h1>
+                <div class="links">
+                  <div class="link">
+                    <a href="#"><i class="fa fa-twitter"></i></a>                    
                   </div>
-                </div>
-                <div class="meta-date"></div>
-              </div>
-              <div class="timeline-article">
-                <div class="content-right-container">
-                  <div class="content-right">
-                    <h3 class="job-heading">Summer Researcher at AUL</h3>
-                    <p class="article-date">MAY 2022-JUN 2021</p>
-                    <p>
-                      Wrote a research paper on how mobile apps will impact
-                      various other tech fields. Did an insightful research under
-                      the guidance of professors of our college.
-                    </p>
+                  <div class="link">
+                    <a href=""><i class="fa fa-linkedin"></i></a>
                   </div>
-                </div>
-                <div class="meta-date"></div>
-              </div>
-              <!-- // Article -->
-              
-              <!-- Article -->
-              <div class="timeline-article">
-                <div class="content-left-container">
-                  <div class="content-left">
-                    <h3 class="job-heading">B. Tech in CSE from AUL</h3>
-                    <p class="article-date">Nov 2020-JUL 2024</p>
-                    <p>
-                      Persued a degree in Bachelors in Technology specializing in Computer Science Engineering.
-                      </p>
+                  <div class="link">
+                    <a href=""><i class="fa fa-github"></i></a>
                   </div>
+                  <div class="link">
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                  </div>
+                  <div class="link">
+                    <a href=""><i class="fa-brands fa-medium"></i></a>
+                  </div>
+                  <!-- <div class="link">
+                    <a href=""><i class="fa-brands fa-codepen"></i></a>
+                  </div> -->
                 </div>
-                <div class="meta-date"></div>
+            </div>
+              <div class="contact-form-wrapper">
+                <form action="https://formsubmit.co/ailyafatima572022@email.com" method="POST">
+                  <div class="form-item">
+                    <input class="contact-input" type="text" name="sender" required>
+                    <label class="contact-label">Name:</label>
+                  </div>
+                  <div class="form-item">
+                    <input class="contact-input" type="email" name="email" required>
+                    <label class="contact-label">Email:</label>
+                  </div>
+                  <div class="form-item">
+                    <textarea class="contact-textarea" name="message" required></textarea>
+                    <label class="contact-label">Message:</label>
+                  </div>
+                  <button class="submit-btn" type="submit" value="Done">Send</button>  
+                </form>
               </div>
             </div>
-            <div class="timeline-end">End</div>
-          </div>
-        </section>
-        <section class="contact-section">
-          <div class="content">
-            <h1>Contact Me</h1>
-            <form>
-              <label>Your Name :</label>
-              <input type="text" placeholder="Your Name">
-              <label>Your E-mail :</label>
-              <input type="text" placeholder="Example@mail.com">
-              <label>Your message :</label>
-              <textarea placeholder="The Subject"></textarea>
-              <input type="submit" value="Done">
-            </form>
-          </div>
         </section>
         </main>
 
