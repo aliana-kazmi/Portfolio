@@ -18,7 +18,7 @@
    --carolina-blue: #429DC8;
    --maximmum-blue: #46B7D6;
    --dark-sky-blue: #71bbcc;
-   --light-steel-blue: #AEC0D0;
+   --light-steel-blue: #a0d4ff;
  
    --blue-purple: #A3A4E5;    
    --azure-blue: #3A86FF;  
@@ -62,7 +62,7 @@
    
      --background-image:  linear-gradient(to bottom right,
      rgba(25, 12, 172, 0.377),
-     rgba(209, 84, 228, 0.404)),url("../images/background-1.jpg");
+     rgba(209, 84, 228, 0.404)),url("../images/b1.jpg");
      
     --gradient:linear-gradient(
       to right,
@@ -100,7 +100,7 @@
    
      --background-image: linear-gradient(to bottom right,
      rgba(62, 78, 80,0.486),
-     rgba(248, 189, 127,0.5)),url("../images/background2.jpg");
+     rgba(248, 189, 127,0.5)),url("../images/b22.jpg");
      
     --gradient:linear-gradient(
       to right,
@@ -137,7 +137,7 @@
         to bottom right,
         rgba(68, 142, 155, 0.486),
         rgba(113, 187, 204, 0.5)),
-       url("../images/background3.jpg");
+       url("../images/b.jpg");
    
        --gradient:linear-gradient(
          to right,
@@ -173,7 +173,7 @@
        to bottom right,
        rgba(209, 84, 228, 0.486),
        rgba(239, 79, 145, 0.5)),
-      url("../images/background4.jpg");
+      url("../images/b4.jpg");
    
       --gradient:linear-gradient(
         to right,
