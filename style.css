@@ -1108,10 +1108,8 @@ span.name:hover {
 
 }
 
-.link .fa, .link .fa-brands{
+.link .fa, .link .fa-brands, .link .fa-solid{
 	font-size: 1.8em;
-}
-.link .fa, .link .fa-brands {
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
@@ -1123,8 +1121,8 @@ span.name:hover {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.fa:hover,.link .fa-brands:hover,
- .link .fa:active, .link .fa-brands:active { 
+.fa:hover,.link .fa-brands:hover, .fa-solid:hover
+ .link .fa:active, .link .fa-brands:active,.fa-solid:active { 
   -webkit-transform: scale(1.1);
  -moz-transform: scale(1.1);
  -ms-transform: scale(1.1);
