@@ -1616,7 +1616,7 @@ body {
 
 .timeline-container {
   scale: 0.8;
-  transform: translateY(-346px) translateX(-5%)
+  transform: translateY(-16%) translateX(clamp(-9%,-10%,-20%));
 }
 
 }
