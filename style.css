@@ -1256,7 +1256,12 @@ body {
   transition: transform 0.45s ease-in;
 }
 
+.nav-links {
+  height: 80vh;
+}
+
 .nav-active {
+  justify-content: space-evenly;
   transform: translateX(0%);
 }
 
@@ -1416,33 +1421,59 @@ body {
 /* -------------------------------------------------------------------------------------- */
 
 @media screen and (max-width:450px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .hero-container {
+    padding-top: 120px;
+  }
+
   html,.about-section, .skills-section,.hero-container,.project-display-section {
     width: 100vw;
   }
+
   header {
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
+
+  .heading {
+    font-size: 36px;
+  }
+
   .waves {
     height: 45px;
   }
+
   .side {
     width: 60vw;
     height: 60vw;
   }
+
   span.name {
     display: block;
     font-size: 3rem;
   }
+
+  .skills-type-container {
+    width: 80%;
+  }
+
+.custom-btn {
+  height: 40px;
+  width: 100px;
+}
+
   .element {
     font-size: 20px;
   }
+
   .link .fa::before, .link .fa-brands::before, .link .fa-solid::before {
     height: 25px;
     width:25px;
   }
 
-  
 .card, .card.secondary {
   width: 80%;
   height: 30rem;
@@ -1458,6 +1489,8 @@ body {
 
 .card .additional, .card.secondary .additional {
   position: absolute;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 30%;
   transition:height 0.4s;
@@ -1472,8 +1505,8 @@ body {
 
 .card .additional .image-card,
 .card.secondary .additional .image-card {
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 40%;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -1569,6 +1602,21 @@ body {
 .card .general .more {
   bottom: 5rem;
   font-size: 0.9em;
+}
+
+.timeline-section {
+  height: 1700px;
+  justify-content: unset;
+}
+
+.timeline.heading {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.timeline-container {
+  scale: 0.8;
+  transform: translateY(-346px) translateX(-5%)
 }
 
 }
