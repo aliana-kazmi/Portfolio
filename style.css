@@ -670,7 +670,6 @@ span.name:hover {
 }
 
 .heading {
-  color: var(--tertH1);
   margin-bottom:35px;
   text-transform: capitalize;
   font-size: 50px;
@@ -867,11 +866,11 @@ span.name:hover {
   padding-left: 9%;
 }
 
-.card .additional .image-card svg,.card.secondary .additional .image-card svg {
+/* .card .additional .image-card svg,.card.secondary .additional .image-card svg {
   padding-left: 10%;
   height: 150px;
   width: 150px;
-}
+} */
 .card .additional .image-card::after {
   content: "";
   display: block;
@@ -1209,7 +1208,7 @@ footer {
 }
 /* -------------------------------------------------------------------------------------- */
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:850px){
 body {
     overflow-x: hidden;
     position: relative;
@@ -1255,6 +1254,10 @@ body {
   width:50%;
   transform: translateX(100%);
   transition: transform 0.45s ease-in;
+}
+
+.nav-active {
+  transform: translateX(0%);
 }
 
 .nav-links li {
@@ -1321,10 +1324,6 @@ body {
 .picture {
   border-radius: 296370px;
   width: 100%;
-}
-
-.nav-active {
-    transform: translateX(0%);
 }
 
 .hero-container {
@@ -1414,4 +1413,162 @@ body {
 
 }
 
-/* --------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:450px) {
+  html,.about-section, .skills-section,.hero-container,.project-display-section {
+    width: 100vw;
+  }
+  header {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .waves {
+    height: 45px;
+  }
+  .side {
+    width: 60vw;
+    height: 60vw;
+  }
+  span.name {
+    display: block;
+    font-size: 3rem;
+  }
+  .element {
+    font-size: 20px;
+  }
+  .link .fa::before, .link .fa-brands::before, .link .fa-solid::before {
+    height: 25px;
+    width:25px;
+  }
+
+  
+.card, .card.secondary {
+  width: 80%;
+  height: 30rem;
+  border-radius: 6px;
+  /* overflow: hidden; */
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.card .additional, .card.secondary .additional {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  transition:height 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card .additional:hover, .card.secondary .additional:hover {
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.card .additional .image-card,
+.card.secondary .additional .image-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card .additional .image-card i,
+.card.secondary .additional .image-card i {
+  font-size: 5rem;
+  padding: 15% 0 0 0;
+}
+
+.card .additional .image-card::after,
+.card.secondary .additional .image-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.card .additional .more-info,
+.card.secondary .additional .more-info {
+  width: 100%;
+  float:inline-start;
+  position: absolute;
+  top: 9rem;
+  left: 0;
+  height: 21rem;
+}
+
+.card .additional .coords-container,
+ .card.secondary .additional .coords-container  {
+  margin-top: 15%;
+}
+
+.card .additional .stats .project-link i, .card .general .stats .project-link i,
+.card.secondary .additional .stats .project-link i, .card.secondary .general .stats .project-link i{
+  font-size: 20px;
+}
+
+.card .additional .coords-container .coords,
+.card.secondary .additional .coords-container .coords {
+  margin: 0 0.5rem;
+}
+
+.card .additional .stats,
+.card .general .stats,
+.card.secondary .additional .stats,
+.card.secondary .general .stats {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+.card .additional .stats > div,
+.card .general .stats > div
+.card.secondary .additional .stats > div,
+.card.secondary .general .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats .project-link i,
+ .card .general .stats .project-link i,
+ .card.secondary .additional .stats .project-link i,
+ .card.secondary .general .stats .project-link i  {
+  display: block;
+}
+
+.card .additional .stats div.title,
+.card .general .stats div.title {
+  font-size: 0.75rem;
+}
+
+.card .general,
+.card.secondary .general {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  bottom: 5rem;
+  font-size: 0.9em;
+}
+
+}
