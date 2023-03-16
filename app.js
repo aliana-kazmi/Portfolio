@@ -33,6 +33,16 @@ const navSlide = () => {
     });
 }
 
+colorThemes.forEach((themeOption) => {
+  console.log(themeOption)
+  themeOption.addEventListener("click", () => {
+    storeTheme(themeOption.id);
+    // fallback for no :has() support
+    document.documentElement.className = themeOption.id;
+  });
+});
+
+// for creating gradient coloured text
 const gradientEffect = () => {
     const name = document.querySelector('.name')
 
@@ -43,16 +53,17 @@ const gradientEffect = () => {
     });
 }
 
-colorThemes.forEach((themeOption) => {
-  console.log(themeOption)
-  themeOption.addEventListener("click", () => {
-    storeTheme(themeOption.id);
-    // fallback for no :has() support
-    document.documentElement.className = themeOption.id;
-  });
-});
-
 document.onload = setTheme();
 
 navSlide();
 gradientEffect();
+
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector("body").style.visibility = "hidden";
+      document.querySelector("#loader-container").style.visibility = "visible";
+  } else {
+      document.querySelector("#loader-container").style.display = "none";
+      document.querySelector( "body").style.visibility = "visible";
+  }
+};

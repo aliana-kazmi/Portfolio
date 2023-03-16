@@ -8,7 +8,15 @@
     <title>Ailya's Portfolio</title>
     <script src="https://kit.fontawesome.com/8b5aa90e1a.js" crossorigin="anonymous"></script>
 </head>
+<div class="loader-container" id="loader-container">
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+  </div>
+</div>
 <body>
+  <!-- Theme Selector Container -->
     <aside class="theme-container">
         <form action="" class="theme-picker">
             <fieldset>
@@ -30,6 +38,7 @@
             </fieldset>
         </form>
     </aside>
+    <!-- navbar -->
         <header class="glassmorphism">
             <nav class="navbar">
                 <div class="logo">
@@ -48,7 +57,8 @@
                     <div class="line3"></div>
                 </div>
             </nav>
-        </header>    
+        </header>
+    <!-- hero section -->
     <div class="pic-background">
         <section class="hero-container" id="hero-container">
             <div class="content">
@@ -64,7 +74,6 @@
                                 <div class="element">UI/UX Designer</div>
                                 <div class="element">Back-End Web Developer</div>
                                 <div class="element">Python Enthusiast</div>
-                                <!-- <div class="element">Dedicated</div> -->
                               </div>
                             </div>
                           </div>
@@ -112,14 +121,16 @@
           </section>          
     </div>
     <main>
+      <!-- About Section -->
         <section class="about-section" id="about-section">
             <div class="about-text">
                 <div class="about-title">
                     <h2 class="about-me heading">About me</h2>
                 </div>
-                I am a goal-oriented Computer Science sophomore student and software developer from Lucknow, India. I love spending time absorbing new information and implementing it to find solutions for various problems. I believe the best way to learn is by building, even if it means getting stuck and having to figure things out on my own. That's why I enjoy building things from scratch and using Google to troubleshoot any issues that come up. I'm seeking a full-time role where I can exchange wisdom with other developers while contributing to a company and its goals.
+                I am a <span class="gradient-effect">goal-oriented</span> Computer Science sophomore student and software developer hailing from the vibrant city of Lucknow, India. 
+                <br>For me, <span class="gradient-effect">learning is a continuous process</span>, and I firmly believe that the best way to learn is by doing, even if it means <span class="gradient-effect">encountering roadblocks</span> and <span class="gradient-effect">having to figure things out on my own</span>. That's why I relish building things from scratch and leveraging the vast resources available online to overcome any obstacles. <br>Currently, I am <span class="gradient-effect">on the lookout</span> for a full-time opportunity that would enable me to <span class="gradient-effect">exchange ideas and knowledge</span> with fellow developers, all while <span class="gradient-effect">contributing to the growth</span> of the company and its goals.
                 <div class="all-btns">
-                  <a href="https://drive.google.com/file/d/1V0MdHN84e5r5CVm9cPuqB8VNN0MF0OXW/view?usp=sharing" target="_blank">
+                  <a href="https://drive.google.com/file/d/1_1A6IzcP07YWVLiaNQOCG2VlQobAuwNR/view?usp=share_link" target="_blank">
                   <button class="custom-btn btn">Resume</button></a>
                   <a href="#contact-section">
                   <button class="custom-btn btn" type="button">Contact</button></a>
@@ -127,8 +138,7 @@
               </div>
             </div>
             <aside class="about-side">
-                <figure class="picture about-pic">
-                  <!-- <div class="picture-shadow"></div> -->
+                <figure class="picture about-pic">\
                   <img id="pictureImage" class="picture-image"
                     src="images/about-4.png"
                     srcset="images/about-4.png 1x,
@@ -141,9 +151,21 @@
                 </figure>
               </aside>
         </section>
+        <!-- Skills Section -->
         <section class="skills-section">
-          <h1 class="skills-heading heading">My Skills</h1>
+          <h1 class="skills-heading heading">My Tool Box</h1>
           <div class="skills-container">
+            <div class="skills-type-container">
+              <h1 class="skill-type-heading">Interests</h1>                    
+              <ul class="skills-list">
+              <li class="skill">Software Development</li>
+              <li class="skill">API Development</li>
+              <li class="skill">Backend Web Development</li>
+              <li class="skill">Cloud Computing</li>
+              <li class="skill">UI/UX</li>
+              <li class="skill">Data Structures and Algorithms</li>
+            </ul>
+          </div>
           <div class="skills-type-container">
             <h1 class="skill-type-heading">Languages</h1>                    
             <ul class="skills-list">
@@ -169,7 +191,7 @@
             <ul class="skills-list">
             <li class="skill">SQLite</li>
             <li class="skill">MySQL</li>
-            <li class="skill">Oracle</li>
+            <li class="skill">OracleSQL</li>
             <li class="skill">PostgreSQL</li>
             <li class="skill">MongoDB</li>
           </ul>
@@ -178,16 +200,13 @@
             <h1 class="skill-type-heading">Soft Skills</h1>
             <ul class="skills-list">
             <li class="skill">Problem Solving</li>
-            <li class="skill">Backend Web Development</li>
-            <li class="skill">Data Structure</li>
             <li class="skill">Critical Thinking</li>
-            <li class="skill">Cloud Computing</li>
-            <li class="skill">UI/UX</li>
-            <li class="skill">Algorithms</li>
             <li class="skill">Adaptibility</li>
             <li class="skill">Creativity</li>
             <li class="skill">Decision making</li>
-            <li class="skill">Resouceful</li>
+            <li class="skill">Strong Communication</li>
+            <li class="skill">Team Work</li>
+            <li class="skill">Time Management</li>
           </ul>
         </div>
           <div class="skills-type-container">
@@ -220,8 +239,9 @@
             </g>
             </svg>
             </div> 
+            <!-- Project Section -->
             <div class="project-section-title">
-                <h2 class="project-heading heading">My Projects</h2>
+                <h2 class="project-heading heading">My Recent Works</h2>
             </div>
             <div class="projects-container">
                 <div class="card">
@@ -239,6 +259,7 @@
                         </div>
                         <div class="coords">
                           <span class="coord-items">Web Development</span>
+                          <span class="coord-items">API Development</span>
                           <span class="coord-items">Databases</span>
                         </div>
                       </div>
@@ -322,8 +343,11 @@
                         <div class="coords-container">
                         <div class="coords">
                           <span class="coord-items">Flask</span>
-                          <span class="coord-items"></span>
-                          <span class="coord-items">SQLAlchamy</span>
+                          <span class="coord-items">Web Development</span>
+                          <span class="coord-items">SQLAlchemy</span>
+                          <span class="coord-items">HTML</span>
+                          <span class="coord-items">CSS</span>
+                          <span class="coord-items">JavaScript</span>
                         </div>
                         <div class="coords">
                           <span class="coord-items">Web Development</span>
@@ -531,13 +555,29 @@
         </section>
       </main>
         <footer>
+          <!-- Timeline -->
         <section class="timeline-section" id="timeline-section">
           <div class="timeline-title">
             <h2 class="time-line heading">My Timeline</h2>
         </div>
         <div class="timeline-container">
+          <div class="timeline__component timeline__component--bg">
+            <h2 class="timeline__title">Web Developer at Astronomy Club</h2>
+            <p class="timeline__paragraph">
+              •	Created an astronomy club website which displays events in calendar and detailed forms along with home page.
+          <br>•	Implemented authentication by creating user and permission management for managing the website including events and venues
+          <br>•	Designed the database schema for storing the data of members, events and venues.
+          <br>•	Skills: User Management, Authentication, Github, Django, Python (Programming Language), HTML, CSS, JavaScript, Git 
+            </p>
+          </div>
+          <div class="timeline__middle">
+            <div class="timeline__point"></div>
+          </div>
           <div class="timeline__component">
-            <div class="timeline__date timeline__date--right">MAR 2022-JUL 2022</div>
+            <div class="timeline__date">MAY 2021-JUN 2021</div>
+          </div>
+          <div class="timeline__component">
+            <div class="timeline__date timeline__date--right">MAR 2022-MAY 2022</div>
           </div>
           <div class="timeline__middle">
             <div class="timeline__point"></div>
@@ -545,11 +585,11 @@
           <div class="timeline__component timeline__component--bg">
             <h2 class="timeline__title">In House Practical Training at AUL</h2>
             <p class="timeline__paragraph">
-              Wrote a research paper on how to develop industry ready
-              website using Django.
-              Created an astronomy club website and student management
-              website for understanding and implementing concepts.
-              Designed the database schema and website front end
+              •	Wrote a research paper on how to develop an industry-ready websites and software using Django.
+              <br>•	Developed a demo web app for demonstration of various features of Django. 
+              <br>•	Developed a demo API for demonstration of various features of Django REST Framework
+              <br>•	Skills: Django, Django REST Framework, Python (Programming Language), HTML, CSS, JavaScript, Git
+
             </p>
           </div>
           <div class="timeline__component timeline__component--bg">
@@ -574,11 +614,15 @@
           <div class="timeline__component timeline__component--bottom timeline__component--bg">
             <h2 class="timeline__title">Persuing a degree in B. Tech in CSE</h2>
             <p class="timeline__paragraph">
-              Persued a degree in Bachelors in Technology specializing in Computer Science Engineering from Amity University.
+              • Specialization in Computer Science Engineering
+              <br>• Current CGPA: 8.38
+              <br>• Volunteer at open source community ALiAS 
+              <br>• Volenteer at community GDSC.
             </p>
           </div>
-
         </section>
+        <!-- Footer -->
+        <!-- Contact Section -->
         <section class="contact-section" id="contact-section">
           <div>
             <svg class="waves-flipped" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -637,7 +681,7 @@
               </div>
             </div>
         </section>
-       <div class="footer-desc">Created by Ailya Fatima with ❤️ Copyright ©Ailya_Fatima_Portfolio
+       <div class="footer-desc">Created by Ailya Fatima with ❤️      Copyright ©Ailya_Fatima_Portfolio
        </div> 
 
         <!-- Thanks to icon8 for providing doctor who and notes svg -->
