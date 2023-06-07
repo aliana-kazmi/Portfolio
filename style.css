@@ -965,11 +965,11 @@ span.name:hover {
   padding-left: 9%;
 }
 
-/* .card .additional .image-card svg,.card.secondary .additional .image-card svg {
+.card .additional .image-card svg,.card.secondary .additional .image-card svg {
   padding-left: 10%;
   height: 150px;
   width: 150px;
-} */
+}
 .card .additional .image-card::after {
   content: "";
   display: block;
